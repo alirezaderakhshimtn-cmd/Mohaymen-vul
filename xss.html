@@ -1,0 +1,5 @@
+<!-- Vulnerable Cross Site Scripting example -->
+<form action="/search">
+    <input name="q" value="<script>alert('XSS');</script>">
+</form>
+<div id="results">Search for: <script>document.write(location.search);</script></div>

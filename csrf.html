@@ -1,0 +1,5 @@
+<!-- Vulnerable Cross-Site Request Forgery example -->
+<form action="/change-email" method="POST">
+    <input type="hidden" name="email" value="attacker@example.com">
+    <input type="submit" value="Change Email">
+</form>
